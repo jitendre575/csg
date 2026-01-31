@@ -81,6 +81,31 @@ export default function WelcomePage() {
               <ArrowRight className="text-accent" size={24} />
             </div>
           </button>
+
+          {/* User Connect Card */}
+          <button
+            onClick={() => router.push('/user-connect')}
+            className="group relative flex items-center gap-6 p-8 rounded-[2.5rem] bg-card/40 border-2 border-white/10 hover:border-primary/50 backdrop-blur-2xl transition-all duration-500 overflow-hidden shadow-2xl hover:shadow-primary/20 hover:-translate-y-1 active:scale-[0.98] text-left"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+            <div className="relative flex items-center justify-center w-20 h-20 rounded-[1.5rem] bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 group-hover:scale-110 shadow-xl group-hover:shadow-primary/50">
+              <Sparkles size={40} strokeWidth={2.5} />
+            </div>
+
+            <div className="relative flex-1">
+              <h2 className="text-2xl font-black text-white uppercase italic tracking-tight group-hover:text-primary transition-colors">
+                User Connect
+              </h2>
+              <p className="text-muted-foreground text-sm font-medium mt-1 leading-tight">
+                Connect and chat with users worldwide instantly
+              </p>
+            </div>
+
+            <div className="relative opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+              <ArrowRight className="text-primary" size={24} />
+            </div>
+          </button>
         </div>
 
         {/* Footer info */}
